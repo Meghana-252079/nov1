@@ -62,6 +62,7 @@ public class product {
     private category category;
     public product() {
     }
+    //chinnu
 
     public product(Long id, String desc, String title, Double price, String imageurl, com.scaler.mydemo.models.category category) {
         this.id = id;
