@@ -1,6 +1,6 @@
 package com.scaler.mydemo.models;
 
-public class category {
+public class Category {
     private Long id;
     private String title;
 
@@ -12,7 +12,7 @@ public class category {
         this.id = id;
     }
 
-    public String getTitle() {
+    public String getTitle(String category) {
         return title;
     }
 
@@ -21,10 +21,10 @@ public class category {
 
     }
 
-    public category() {
+    public Category() {
     }
 
-    public category(Long id, String title) {
+    public Category(Long id, String title) {
         this.id = id;
         this.title = title;
     }

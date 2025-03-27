@@ -1,13 +1,11 @@
 package com.scaler.mydemo.models;
 
-import lombok.Getter;
-import lombok.Setter;
 
-
-public class product {
+public class Product {
     private Long id;
     private String desc;
     private String title;
+    private Category category;
     private Double price;
     private String imageurl;
 
@@ -51,20 +49,20 @@ public class product {
         this.imageurl = imageurl;
     }
 
-    public com.scaler.mydemo.models.category getCategory() {
+    public Category getCategory() {
         return category;
     }
 
-    public void setCategory(com.scaler.mydemo.models.category category) {
+    public void setCategory(Category category) {
         this.category = category;
     }
 
-    private category category;
-    public product() {
+    private Category category;
+    public Product() {
     }
     //chinnu
 
-    public product(Long id, String desc, String title, Double price, String imageurl, com.scaler.mydemo.models.category category) {
+    public Product(Long id, String desc, String title, Double price, String imageurl, Category category) {
         this.id = id;
         this.desc = desc;
         this.title = title;
