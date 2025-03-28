@@ -15,10 +15,10 @@ public class ProductController {
     {
 
     }
-    public product getProduct(long id)
-    {
-return null;
-    }
+//    public product getProduct(long id)
+//    {
+//return null;
+//    }
     public void updateProduct (product product)
     {
 
