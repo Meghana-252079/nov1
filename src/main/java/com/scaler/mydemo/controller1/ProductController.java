@@ -1,25 +1,23 @@
 package com.scaler.mydemo.controller1;
 
-import com.scaler.mydemo.models.product;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import com.scaler.mydemo.models.Product;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 
 public class ProductController {
   //  @RequestMapping(value="/product",method= RequestMethod.POST)
     @PostMapping("/product")
-    public void CreateProduct(product product)
+    public void CreateProduct(Product product)
     {
 
     }
-//    public product getProduct(long id)
-//    {
-//return null;
-//    }
-    public void updateProduct (product product)
+    @GetMapping("/getProduct/{id}")
+    public Product getProduct(@PathVariable("id") long id)
+    {
+return null;
+    }
+    public void updateProduct (Product product)
     {
 
     }
